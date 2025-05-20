@@ -9,7 +9,7 @@ const items = [
     content: "Ofrecemos prendas versátiles, modernas y cómodas para todas las estaciones.",
     hoverTitle: "Estilo que Enamora",
     hoverContent: "Explora nuestras colecciones que combinan diseño, comodidad y tendencia.",
-    image: "https://media.istockphoto.com/id/1152527286/photo/boutique-shoes-in-a-store.jpg?s=612x612&w=0&k=20&c=-_8nvBm9UrJW65mZxROh7Nz6BfZEk7APnffzrNRwgkQ=",
+    image: "https://media.glamour.mx/photos/667d769bb9f05387d65162d9/16:9/w_2000,h_1125,c_limit/Outfit%20para%20fiesta%20de%20noche%20mujer.jpg",
   },
   {
     icon: <FaShoePrints className="text-white text-5xl" />,
