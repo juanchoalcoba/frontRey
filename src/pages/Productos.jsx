@@ -39,7 +39,7 @@ const Productos = () => {
   const categories = Object.keys(productData)
 
   return (
-    <div className='bg-black mt-12 min-h-screen text-white p-8'>
+    <div className='bg-black mt-16 min-h-screen text-white p-8'>
       <h2 className='text-3xl font-bold mb-6 text-center'>Tienda</h2>
 
       {/* Navegación de categorías */}
