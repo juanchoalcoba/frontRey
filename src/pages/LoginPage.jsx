@@ -67,7 +67,7 @@ function LoginPage() {
             type="submit"
             className="w-full bg-orange-400 hover:bg-orange-500 text-white font-medium py-2 rounded-md transition-all duration-500"
           >
-            Login
+            Iniciar Sesión
           </button>
         </form>
 

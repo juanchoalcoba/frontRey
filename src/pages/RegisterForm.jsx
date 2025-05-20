@@ -83,7 +83,7 @@ const RegisterForm = () => {
             type="submit"
             className="w-full py-3 bg-orange-400 text-white font-semibold rounded-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
           >
-            Registrar
+            Registrarse
           </button>
         </form>
 
