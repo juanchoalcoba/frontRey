@@ -23,9 +23,9 @@ export default function Contacto() {
   };
 
   return (
-    <section className="min-h-screen mt-18 flex items-center justify-center bg-gradient-to-br from-rose-100 to-pink-200 px-4 py-16">
+    <section className="min-h-screen mt-18 flex items-center justify-center bg-gradient-to-br from-orange-100 to-orange-300 px-4 py-16">
       <div className="w-full max-w-xl bg-white rounded-3xl shadow-2xl p-10 transition-all duration-300">
-        <h2 className="text-3xl font-bold text-pink-600 mb-6 text-center">¡Contáctanos!</h2>
+        <h2 className="text-3xl font-bold text-orange-600 mb-6 text-center">¡Contáctanos!</h2>
         <p className="text-gray-600 mb-8 text-center">
           ¿Tienes alguna pregunta sobre nuestros productos de ropa o calzado? ¡Estamos para ayudarte!
         </p>
