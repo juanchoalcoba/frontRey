@@ -38,7 +38,7 @@ const slides = [
 
 export default function HeroSlider() {
   return (
-    <div className="relative w-full h-[85vh]">
+    <div className="relative w-full mt-2 h-[85vh]">
       <Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 1700, disableOnInteraction: false }}
