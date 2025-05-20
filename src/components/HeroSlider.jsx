@@ -15,14 +15,14 @@ const slides = [
   },
   {
     id: 2,
-    image: 'https://wallpapers.com/images/featured/tienda-de-ropa-sqy45b7hhimu1de8.jpg',
+    image: 'https://media.glamour.mx/photos/667d769bb9f05387d65162d9/16:9/w_2000,h_1125,c_limit/Outfit%20para%20fiesta%20de%20noche%20mujer.jpg',
     title: 'Ropa de Noche Elegante',
     text: 'Brillá en cada evento con nuestra colección exclusiva.',
     button: 'Explorar',
   },
   {
     id: 3,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfFpG_7hCM2eJd1KmpcIdaMPQzLTStabKkBQ&s',
+    image: 'https://media.istockphoto.com/id/1152527286/photo/boutique-shoes-in-a-store.jpg?s=612x612&w=0&k=20&c=-_8nvBm9UrJW65mZxROh7Nz6BfZEk7APnffzrNRwgkQ=',
     title: 'Estilo Casual',
     text: 'Comodidad y estilo para todos los días.',
     button: 'Ver Más',
