@@ -44,7 +44,7 @@ const Navbar = () => {
         <h1 className="text-2xl text-gray-200 ml-2">Rey Hnos</h1>
         </div>
         {/* Desktop Menu */}
-        <ul ref={menuRef} className="hidden md:flex items-center gap-6 text-white font-medium">
+        <ul className="hidden md:flex items-center gap-6 text-white font-medium">
           {isAuthenticated ? (
             <>
               <li className="text-sm uppercase text-orange-200">Hola, {user?.username || "User"}</li>
