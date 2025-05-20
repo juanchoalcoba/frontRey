@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AboutSection from "../components/AboutSection";
 import HeroSlider from "../components/HeroSlider";
+import HeroScroll from "../components/HeroScroll";
 
 const Dashboard = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -48,6 +49,7 @@ const Dashboard = () => {
 
       <AboutSection />
       <HeroSlider />
+      <HeroScroll />
     </>
   );
 };

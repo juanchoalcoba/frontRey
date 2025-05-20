@@ -41,7 +41,7 @@ export default function HeroSlider() {
     <div className="relative w-full h-[85vh]">
       <Swiper
         modules={[Autoplay, Navigation]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 1700, disableOnInteraction: false }}
         navigation
         loop
         speed={800}
