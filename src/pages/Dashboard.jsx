@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AboutSection from "../components/AboutSection";
 import HeroSlider from "../components/HeroSlider";
 import HeroScroll from "../components/HeroScroll";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -41,9 +42,9 @@ const Dashboard = () => {
             Vanguardia y elegancia en cada prenda. Descubrí nuestra colección
             premium de ropa y calzado diseñada para destacar.
           </p>
-          <button className="bg-white cursor-pointer text-black px-10 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
+          <Link to='/productos' className="bg-white cursor-pointer text-black px-10 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
             Tienda
-          </button>
+          </Link>
         </div>
       </div>
 
