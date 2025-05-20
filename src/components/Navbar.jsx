@@ -8,6 +8,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [configOpen, setConfigOpen] = useState(false);
   const configRef = useRef(null);
+  
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -29,18 +30,16 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex  justify-center items-center">
-          <Link to="/">
-            <img className="w-12 rounded-full" src="logorey.png" alt="" />
-          </Link>
-          <h1 className="text-2xl text-gray-200 ml-2">Rey Hnos</h1>
+        <Link to='/'>
+          <img className="w-12 rounded-full" src="logorey.png" alt="" />
+        </Link>
+        <h1 className="text-2xl text-gray-200 ml-2">Rey Hnos</h1>
         </div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6 text-white font-medium">
           {isAuthenticated ? (
             <>
-              <li className="text-sm uppercase text-orange-200">
-                Hola, {user?.username || "User"}
-              </li>
+              <li className="text-sm uppercase text-orange-200">Hola, {user?.username || "User"}</li>
               <li>
                 <Link
                   to="/tienda"
@@ -138,9 +137,12 @@ const Navbar = () => {
                   Contacto
                 </Link>
               </li>
-              <li ref={configRef}>
+              <li>
                 <button
-                  onClick={() => setConfigOpen(!configOpen)}
+                  onClick={() => {
+                    logout();
+                    setMenuOpen(false);
+                  }}
                   className="flex items-center gap-2 hover:text-orange-300"
                 >
                   <FaCog /> Cerrar Sesión
