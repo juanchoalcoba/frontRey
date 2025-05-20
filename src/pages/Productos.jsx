@@ -48,7 +48,7 @@ const Productos = () => {
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-4 py-2 rounded-lg transition-colors ${
+            className={`px-4 py-2 rounded-lg transition-colors cursor-pointer ${
               activeCategory === category ? 'bg-white text-black' : 'bg-gray-700 hover:bg-gray-600'
             }`}
           >
