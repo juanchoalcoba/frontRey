@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutSection";
 import HeroSlider from "../components/HeroSlider";
 import HeroScroll from "../components/HeroScroll";
 import { Link } from "react-router-dom";
+import BrandCarousel from "../components/BrandCarrousel";
 
 const Dashboard = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -19,7 +20,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* Imagen de fondo con efecto parallax */}
         <img
           src="https://media.istockphoto.com/id/1152527286/photo/boutique-shoes-in-a-store.jpg?s=612x612&w=0&k=20&c=-_8nvBm9UrJW65mZxROh7Nz6BfZEk7APnffzrNRwgkQ="
@@ -34,7 +35,7 @@ const Dashboard = () => {
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* Contenido centrado */}
-        <div className="relative z-10 text-center text-white px-6 max-w-2xl">
+        <div className="flex justify-center flex-col items-center z-10 text-center text-white px-6 max-w-2xl">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-wide">
             Rey Clothes & Shoes
           </h1>
@@ -45,8 +46,13 @@ const Dashboard = () => {
           <Link to='/productos' className="bg-white cursor-pointer text-black px-10 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
             Tienda
           </Link>
+
         </div>
       </div>
+
+          <div className="flex flex-col justify-center items-center h-48">
+          <BrandCarousel />
+          </div>
 
       <AboutSection />
       <HeroSlider />
