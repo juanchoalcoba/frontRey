@@ -32,7 +32,7 @@ const HeroScroll = () => {
         style={{ height: height + 'vh', scale }}
       >
         <div
-          className="w-full h-full bg-cover mt-12 bg-center flex items-center justify-center"
+          className="w-full h-full bg-cover mt-20 bg-center flex items-center justify-center"
           style={{
             backgroundImage:
               'url(https://images.unsplash.com/photo-1602810310475-8cc7b39f601c?auto=format&fit=crop&w=1950&q=80)',
