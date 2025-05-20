@@ -16,7 +16,7 @@ const RegisterForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://front-rey.vercel.app/api/register', formData);
+      const response = await axios.post('https://backend-rey.vercel.app/api/register', formData);
       console.log(response.data);
       setShowSuccessModal(true); // 👈 Mostrar modal de éxito
     } catch (err) {
