@@ -27,10 +27,10 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
 
             {/* Rutas protegidas */}
+              <Route path="/contacto" element={<Contacto />} />
             <Route element={<ProtectedRoute />}>
               <Route path="/tienda" element={<Dashboard />} />
               <Route path="/productos" element={<Productos />} />
-              <Route path="/contacto" element={<Contacto />} />
               
               <Route path="/profile" element={<ProfilePage />} />
             </Route>

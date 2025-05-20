@@ -35,7 +35,7 @@ const Home = () => {
 
     className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition-colors"
   >
-    Entrar
+    Ingresar
   </motion.button>
 </Link>
   </div>
