@@ -35,7 +35,7 @@ const RegisterForm = () => {
 
   const handleCloseModal = () => {
     setShowSuccessModal(false);
-    navigate('/'); // 👈 Redirigir a la tienda después de cerrar modal
+    navigate('/login'); // 👈 Redirigir a la tienda después de cerrar modal
   };
 
   return (
