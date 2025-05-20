@@ -26,7 +26,7 @@ const Navbar = () => {
   }, [isAuthenticated]);
 
   return (
-    <nav className="fixed w-full top-0 z-50 px-6 py-3 bg-white/10 backdrop-blur-lg shadow-md rounded-b-xl border-b border-white/10">
+    <nav className="fixed w-full top-0 z-50 px-6 py-3 bg-black/60 backdrop-blur-lg shadow-md rounded-b-xl border-b border-white/10">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex  justify-center items-center">
