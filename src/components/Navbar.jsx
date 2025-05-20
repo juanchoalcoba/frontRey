@@ -98,7 +98,7 @@ const Navbar = () => {
                   to="/register"
                   className="hover:text-orange-300 transition duration-200"
                 >
-                  Registrar
+                  Registrarse
                 </Link>
               </li>
             </>
