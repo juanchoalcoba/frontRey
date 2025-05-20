@@ -8,26 +8,18 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [configOpen, setConfigOpen] = useState(false);
   const configRef = useRef(null);
-  const menuRef = useRef(null);
-
+  
 
   useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setMenuOpen(false);
-    }
-  };
+    const handleClickOutside = (event) => {
+      if (configRef.current && !configRef.current.contains(event.target)) {
+        setConfigOpen(false);
+      }
+    };
 
-  if (menuOpen) {
     document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("touchstart", handleClickOutside);
-  }
-
-  return () => {
-    document.removeEventListener("mousedown", handleClickOutside);
-    document.removeEventListener("touchstart", handleClickOutside);
-  };
-}, [menuOpen]);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     setConfigOpen(false);
@@ -44,7 +36,7 @@ const Navbar = () => {
         <h1 className="text-2xl text-gray-200 ml-2">Rey Hnos</h1>
         </div>
         {/* Desktop Menu */}
-        <ul ref={menuRef} className="hidden md:flex items-center gap-6 text-white font-medium">
+        <ul className="hidden md:flex items-center gap-6 text-white font-medium">
           {isAuthenticated ? (
             <>
               <li className="text-sm uppercase text-orange-200">Hola, {user?.username || "User"}</li>
@@ -123,7 +115,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul ref={menuRef} className="md:hidden mt-4 flex flex-col gap-4 text-white font-medium bg-white/10 backdrop-blur-md rounded-lg px-4 py-4 border border-white/10">
+        <ul className="md:hidden mt-4 flex flex-col gap-4 text-white font-medium bg-white/10 backdrop-blur-md rounded-lg px-4 py-4 border border-white/10">
           {isAuthenticated ? (
             <>
               <li>Hola, {user?.username || "User"}</li>
