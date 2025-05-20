@@ -69,13 +69,13 @@ const Navbar = () => {
                   onClick={() => setConfigOpen(!configOpen)}
                   className="hover:text-orange-300 transition duration-200"
                 >
-                  <FaCog className="text-lg" />
+                  <FaCog className="text-lg cursor-pointer" />
                 </button>
                 {configOpen && (
                   <div className="absolute right-0 mt-2 w-36 bg-white/80 backdrop-blur-md text-black rounded-lg shadow-lg py-2 z-50">
                     <button
                       onClick={logout}
-                      className="block w-full text-left px-4 py-2 hover:bg-orange-100"
+                      className="block w-full cursor-pointer text-left px-4 py-2 hover:bg-orange-100"
                     >
                       Cerrar sesión
                     </button>
