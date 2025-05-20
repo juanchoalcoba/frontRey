@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex  justify-center items-center">
         <Link to='/'>
-          <img className="w-12 rounded-full" src="logorey.png" alt="" />
+          <img className="w-10 rounded-full" src="logorey.png" alt="" />
         </Link>
         <h1 className="text-2xl text-gray-200 ml-2">Rey Hnos</h1>
         </div>
