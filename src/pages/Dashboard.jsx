@@ -36,7 +36,7 @@ const Dashboard = () => {
 
         {/* Contenido centrado */}
         <div className="flex justify-center flex-col items-center z-10 text-center text-white px-6 max-w-2xl">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-wide">
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-4 tracking-wide">
             Rey Clothes & Shoes
           </h1>
           <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
