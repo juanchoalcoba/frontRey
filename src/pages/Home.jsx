@@ -33,7 +33,7 @@ const Home = () => {
       repeat: Infinity,
     }}
 
-    className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition-colors"
+    className="px-8 py-3 bg-orange-500 cursor-pointer text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition-colors"
   >
     Ingresar
   </motion.button>
