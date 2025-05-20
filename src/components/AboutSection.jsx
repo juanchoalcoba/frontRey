@@ -25,7 +25,7 @@ const items = [
     content: "10 años vistiendo a nuestros clientes con dedicación.",
     hoverTitle: "Experiencia Inolvidable",
     hoverContent: "Una tienda donde la moda se encuentra con la atención al detalle.",
-    image: "https://media.istockphoto.com/id/1152527286/photo/boutique-shoes-in-a-store.jpg?s=612x612&w=0&k=20&c=-_8nvBm9UrJW65mZxROh7Nz6BfZEk7APnffzrNRwgkQ=",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGllbmRhJTIwZGUlMjByb3BhfGVufDB8fDB8fHww",
   },
 ];
 
