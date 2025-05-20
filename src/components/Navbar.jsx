@@ -8,17 +8,26 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [configOpen, setConfigOpen] = useState(false);
   const configRef = useRef(null);
+  const menuRef = useRef(null);
+
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (configRef.current && !configRef.current.contains(event.target)) {
-        setConfigOpen(false);
-      }
-    };
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  };
 
+  if (menuOpen) {
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    document.addEventListener("touchstart", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+    document.removeEventListener("touchstart", handleClickOutside);
+  };
+}, [menuOpen]);
 
   useEffect(() => {
     setConfigOpen(false);
