@@ -70,9 +70,9 @@ const HeroScroll = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: i * 0.2 }}
-              className="bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition hover:scale-105"
+              className="bg-orange-900 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition hover:scale-105"
             >
-              <div className="mb-4 flex items-center justify-center">
+              <div className="mb-4 flex items-center  justify-center">
                 {item.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2 text-center">

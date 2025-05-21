@@ -44,7 +44,7 @@ const Dashboard = () => {
             Vanguardia y elegancia en cada prenda. Descubrí nuestra colección
             premium de ropa y calzado diseñada para destacar.
           </p>
-          <Link to='/productos' className="bg-[#FFE5B4] cursor-pointer text-black px-10 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
+          <Link to='/productos' className="bg-[#FFE5B4] cursor-pointer text-black px-14 py-2 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
             Tienda
           </Link>
 
