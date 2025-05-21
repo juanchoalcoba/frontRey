@@ -11,14 +11,14 @@ const brands = [
 
 const BrandCarousel = () => {
   return (
-    <div className="overflow-hidden w-full bg-white ">
+    <div className="overflow-hidden w-full h-16 bg-white ">
       <div className="animate-marquee flex w-max gap-16">
         {[...brands, ...brands].map((logo, index) => (
           <img
             key={index}
             src={logo}
             alt={`Marca ${index}`}
-            className="h-18 object-contain grayscale rounded-2xl hover:grayscale-0 transition duration-300"
+            className="h-16 object-contain grayscale rounded-2xl hover:grayscale-0 transition duration-300"
           />
         ))}
       </div>

@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
-
-* ::after, ::before {
-    box-sizing: border-box;
+* ::after,
+::before {
+  box-sizing: border-box;
 }
 body {
-    background-color: black;
-     font-family: "Roboto", sans-serif;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
 }
-
 
 @keyframes marquee {
   0% {
@@ -25,8 +24,46 @@ body {
   animation: marquee 30s linear infinite;
 }
 
+.card-glow-border {
+  position: relative;
+  z-index: 0;
+}
 
+.card-glow-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    130deg,
+    #f6e05e,
+    /* Warm Gold */ #ff7e5f,
+    /* Coral Pink */ #8ec5fc,
+    /* Soft Sky Blue */ #e0c3fc,
+    /* Lavender Mist */ #6366f1 /* Indigo for elegance */
+  );
+  background-size: 300% 300%;
+  border-radius: 1rem;
+  padding: 2px;
+  z-index: -1;
+  animation: glow 2s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 @theme {
-  --font-display: "Oswald", "sans-serif"; 
+  --font-display: "Oswald", "sans-serif";
 }
