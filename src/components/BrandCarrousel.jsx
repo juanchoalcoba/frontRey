@@ -11,7 +11,7 @@ const brands = [
 
 const BrandCarousel = () => {
   return (
-    <div className="overflow-hidden w-full py-6">
+    <div className="overflow-hidden w-full ">
       <div className="animate-marquee flex w-max gap-16">
         {[...brands, ...brands].map((logo, index) => (
           <img

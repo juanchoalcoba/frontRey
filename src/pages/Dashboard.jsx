@@ -36,21 +36,21 @@ const Dashboard = () => {
 
         {/* Contenido centrado */}
         <div className="flex justify-center flex-col items-center z-10 text-center text-white px-6 max-w-2xl">
-          <h1 className="text-6xl md:text-7xl font-extrabold mb-4 tracking-wide">
-            Rey Clothes & Shoes
+          <h1 className="text-6xl text-[#FFE5B4] md:text-7xl font-extrabold mb-4 tracking-wide">
+            Rey Hnos <br /> Clothes & Shoes
           </h1>
-          <p className="text-lg md:text-xl mb-6 text-gray-200 leading-relaxed">
+          <p className="text-lg md:text-xl mb-6 text-[#FFE5B4] leading-relaxed">
             Vanguardia y elegancia en cada prenda. Descubrí nuestra colección
             premium de ropa y calzado diseñada para destacar.
           </p>
-          <Link to='/productos' className="bg-white cursor-pointer text-black px-10 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
+          <Link to='/productos' className="bg-[#FFE5B4] cursor-pointer text-black px-10 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300">
             Tienda
           </Link>
 
         </div>
       </div>
 
-          <div className="flex flex-col justify-center items-center h-48">
+          <div className="flex flex-col justify-center items-center h-24">
           <BrandCarousel />
           </div>
 

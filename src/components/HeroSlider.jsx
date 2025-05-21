@@ -61,10 +61,10 @@ export default function HeroSlider() {
 
               {/* Contenido */}
               <div className="relative z-10 flex items-center justify-start px-10 lg:px-24 h-full">
-                <div className="backdrop-blur-sm p-6 rounded-3xl max-w-3xl text-white space-y-4 animate-fadeIn">
+                <div className="backdrop-blur-sm p-6 rounded-3xl max-w-3xl text-[#FFE5B4] space-y-4 animate-fadeIn">
                   <h2 className="text-4xl lg:text-5xl font-bold">{slide.title}</h2>
                   <p className="text-lg">{slide.text}</p>
-                  <button className="bg-white text-black px-5 py-2 rounded-full hover:bg-black hover:text-white transition duration-300">
+                  <button className="bg-[#FFE5B4] text-black px-5 py-2 rounded-full hover:bg-black hover:text-white transition duration-300">
                     {slide.button}
                   </button>
                 </div>

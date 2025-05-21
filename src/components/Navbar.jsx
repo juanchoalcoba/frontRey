@@ -33,13 +33,13 @@ const Navbar = () => {
         <Link to='/'>
           <img className="w-10 rounded-full" src="logorey.png" alt="" />
         </Link>
-        <h1 className="text-2xl text-gray-200 ml-2">Rey Hnos</h1>
+        <h1 className="text-2xl text-[#FFE5B4] ml-2">Rey Hnos</h1>
         </div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6 text-white font-medium">
           {isAuthenticated ? (
             <>
-              <li className="text-sm uppercase text-orange-200">Hola, {user?.username || "User"}</li>
+              <li className="text-sm uppercase text-[#FFE5B4]">Hola, {user?.username || "User"}</li>
               <li>
                 <Link
                   to="/tienda"
@@ -88,15 +88,15 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/login"
-                  className="hover:text-orange-300 transition duration-200"
+                  className="hover:text-orange-300 text-[#FFE5B4] transition duration-200"
                 >
                   Iniciar Sesión
-                </Link>
+                </Link> 
               </li>
               <li>
                 <Link
                   to="/register"
-                  className="hover:text-orange-300 transition duration-200"
+                  className="hover:text-orange-300 transition text-[#FFE5B4] duration-200"
                 >
                   Registrarse
                 </Link>
