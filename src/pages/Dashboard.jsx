@@ -4,6 +4,7 @@ import HeroSlider from "../components/HeroSlider";
 import HeroScroll from "../components/HeroScroll";
 import { Link } from "react-router-dom";
 import BrandCarousel from "../components/BrandCarrousel";
+import Footer from "../components/Footer";
 
 const Dashboard = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -57,6 +58,7 @@ const Dashboard = () => {
       <AboutSection />
       <HeroSlider />
       <HeroScroll />
+      <Footer />
     </>
   );
 };
