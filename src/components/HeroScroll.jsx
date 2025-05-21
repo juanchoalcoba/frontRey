@@ -46,7 +46,7 @@ const HeroScroll = () => {
 
         {/* Contenido */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-5xl lg:text-7xl font-bold text-center px-6">
+          <h1 className="text-orange-200 text-5xl lg:text-[150px] font-bold text-center px-6">
             Inspirá tu estilo con propósito
           </h1>
         </div>

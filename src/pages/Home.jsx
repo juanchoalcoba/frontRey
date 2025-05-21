@@ -20,7 +20,7 @@ const Home = () => {
 
   {/* Contenido encima */}
   <div className="relative z-10 px-4">
-    <h1 className="text-5xl md:text-6xl font-bold mb-8 drop-shadow-xl">
+    <h1 className="text-5xl text-[#FFE5B4] md:text-6xl font-bold mb-8 drop-shadow-xl">
       Rey Clothes & Shoes
     </h1>
 
