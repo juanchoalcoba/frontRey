@@ -22,14 +22,14 @@ const slides = [
   },
   {
     id: 3,
-    image: 'https://media.istockphoto.com/id/1152527286/photo/boutique-shoes-in-a-store.jpg?s=612x612&w=0&k=20&c=-_8nvBm9UrJW65mZxROh7Nz6BfZEk7APnffzrNRwgkQ=',
-    title: 'Estilo Casual',
-    text: 'Comodidad y estilo para todos los días.',
+    image: 'https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Estilo Formal',
+    text: 'Comodidad y estilo para lucirte increible!!.',
     button: 'Ver Más',
   },
   {
     id: 4,
-    image: 'https://wallpapers.com/images/featured/tienda-i5s6es944n29q9sp.jpg',
+    image: 'https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     title: 'Listo para el Trabajo',
     text: 'Elevá tu look de oficina con un toque de elegancia.',
     button: 'Ver Colección',
@@ -61,8 +61,8 @@ export default function HeroSlider() {
 
               {/* Contenido */}
               <div className="relative z-10 flex items-center justify-start px-10 lg:px-24 h-full">
-                <div className="backdrop-blur-sm p-6 rounded-3xl max-w-3xl text-[#FFE5B4] space-y-4 animate-fadeIn">
-                  <h2 className="text-4xl lg:text-5xl font-bold">{slide.title}</h2>
+                <div className="backdrop-blur-xs p-6 rounded-3xl max-w-3xl text-[#FFE5B4] space-y-4 animate-fadeIn">
+                  <h2 className="text-5xl lg:text-6xl font-bold">{slide.title}</h2>
                   <p className="text-lg">{slide.text}</p>
                   <button className="bg-[#FFE5B4] text-black px-5 py-2 rounded-full hover:bg-black hover:text-white transition duration-300">
                     {slide.button}

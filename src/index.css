@@ -37,15 +37,15 @@ body {
     130deg,
     #f6e05e,
     /* Warm Gold */ #ff7e5f,
-    /* Coral Pink */ #8ec5fc,
+    /* Coral Pink */ #797979,
     /* Soft Sky Blue */ #e0c3fc,
-    /* Lavender Mist */ #6366f1 /* Indigo for elegance */
+    /* Lavender Mist */ #ffffff /* Indigo for elegance */
   );
   background-size: 300% 300%;
   border-radius: 1rem;
   padding: 2px;
   z-index: -1;
-  animation: glow 2s linear infinite;
+  animation: glow 4s  infinite;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
@@ -66,4 +66,18 @@ body {
 
 @theme {
   --font-display: "Oswald", "sans-serif";
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;       /* Color blanco */
+  width: 30px !important;        /* Tamaño más chico */
+  height: 30px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;    /* Ícono más pequeño */
+  font-weight: bold;
 }
