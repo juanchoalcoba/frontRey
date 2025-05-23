@@ -36,7 +36,7 @@ const Dashboard = () => {
         />
 
         {/* Capa oscura para contraste */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Contenido centrado */}
         <div className="flex justify-center flex-col items-center z-10 text-center mt-16 text-white px-6 max-w-4xl">

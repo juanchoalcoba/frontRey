@@ -11,7 +11,7 @@ const Home = () => {
 
   {/* Imagen de fondo con opacidad */}
   <div
-    className="absolute inset-0 bg-cover bg-center opacity-40 z-0"
+    className="absolute inset-0 bg-cover bg-center opacity-60 z-0"
     style={{
       backgroundImage:
         "url('https://static.vecteezy.com/system/resources/previews/048/987/089/non_2x/fashion-model-in-vintage-suit-old-fashioned-wallpaper-background-classic-male-portrait-timeless-and-stylish-look-free-photo.jpg')",
