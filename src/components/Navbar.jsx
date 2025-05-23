@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { FaBars, FaTimes, FaCog } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { PiCoatHangerBold } from 'react-icons/pi';
+
+
+
+
 
 const Navbar = () => {
   const { isAuthenticated, logout, user } = useAuth();
@@ -29,12 +34,15 @@ const Navbar = () => {
     <nav className="fixed w-full top-0 z-50 px-6 py-3 bg-black/50 backdrop-blur-md shadow-md rounded-b-xl border-b border-white/10">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
-        <div className="flex  justify-center items-center">
-        <Link to='/'>
-          <img className="w-10 rounded-full" src="logorey.png" alt="" />
-        </Link>
-        <h1 className="text-2xl text-[#FFE5B4] ml-2">Rey Hnos</h1>
-        </div>
+       <div className="flex justify-center items-center">
+  <Link to='/'>
+    <img className="w-10 rounded-full" src="logorey.png" alt="Logo" />
+  </Link>
+  <h1 className="text-2xl text-[#FFE5B4] ml-2 flex items-center gap-1">
+    Rey Hnos
+    <PiCoatHangerBold  className="text-3xl text-[#FFE5B4]" />
+  </h1>
+</div>
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6 text-white font-medium">
           {isAuthenticated ? (

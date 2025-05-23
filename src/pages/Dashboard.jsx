@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import BrandCarousel from "../components/BrandCarrousel";
 import Footer from "../components/Footer";
 import { ReactTyped } from "react-typed";
+import { FaStore } from 'react-icons/fa';
+
 
 const Dashboard = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -39,7 +41,7 @@ const Dashboard = () => {
         {/* Contenido centrado */}
         <div className="flex justify-center flex-col items-center z-10 text-center mt-16 text-white px-6 max-w-4xl">
           <h1 className="text-6xl text-[#FFE5B4] md:text-[5rem] font-extrabold mb-4 tracking-wide">
-            <span className=" text-[#d15e28]  drop-shadow-[2px_2px_2px_#000]">
+            <span className=" text-[#cc6434]  drop-shadow-[2px_2px_2px_#000]">
               Rey Hnos
             </span>
             <br />
@@ -50,11 +52,12 @@ const Dashboard = () => {
             premium de ropa y calzado diseñada para destacar.
           </p>
           <Link
-            to="/productos"
-            className="bg-[#FFE5B4] cursor-pointer text-black px-14 py-2 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300"
-          >
-            Tienda
-          </Link>
+  to="/productos"
+  className="bg-[#FFE5B4] cursor-pointer border border-[#cc6434] text-black px-14 py-1 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-200 transition-all duration-300 flex items-center gap-2"
+>
+  <FaStore className="text-xl" />
+  Tienda
+</Link>
 
           <div className="flex justify-center items-center mt-8">
             <ReactTyped
