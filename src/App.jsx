@@ -27,8 +27,8 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
 
             {/* Rutas protegidas */}
-            <Route element={<ProtectedRoute />}>
               <Route path="/tienda" element={<Dashboard />} />
+            <Route element={<ProtectedRoute />}>
               <Route path="/contacto" element={<Contacto />} />
               <Route path="/productos" element={<Productos />} />
               <Route path="/profile" element={<ProfilePage />} />
